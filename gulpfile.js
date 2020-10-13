@@ -14,7 +14,7 @@ gulp.task("sass", function(){
 		.pipe(autoprefixer())
 		.pipe(size())
         //.pipe(csso())
-        .pipe(gulp.dest('./_site/assets/css/'))
+        .pipe(gulp.dest('./_site/assets/styles/'))
         .pipe(browserSync.stream({match: '**/*.css'}));
 });
 

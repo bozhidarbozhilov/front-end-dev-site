@@ -1,0 +1,3 @@
+@mixin side-border($side, $type, $weight, $color) {
+    border-#{$side}: #{$weight}px #{$type} #{$color};
+}

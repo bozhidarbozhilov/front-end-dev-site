@@ -1,0 +1,11 @@
+@keyframes shakeElement {
+    33% {
+        transform: rotate(5deg);
+    }
+    67% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}

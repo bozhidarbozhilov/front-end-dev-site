@@ -1,0 +1,14 @@
+.content-container {
+    max-width: 335px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    @include for-tablet-landscape-up {
+        max-width: 950px;
+    }
+    @include for-desktop-up {
+        max-width: 1290px;
+    }
+}
+
