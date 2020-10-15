@@ -89,7 +89,18 @@ title: Vanilla Websites
 </section>
 <section class="portfolio">
     <div class="grid-container">
+        {% for project in site.projects %}
         <article class="portfolio__item">
+            <a href="#" class="portfolio__item__img">
+                <img src={{project.img}} alt="Category IoT">
+            </a>
+            <div class="portfolio__item__hover flex-container flex-container--column flex-container--centered">
+                <h4>{{project.category | upcase}}</h4>
+                <p>{{project.name}}</p>
+            </div>
+        </article>
+        {% endfor %}
+        <!-- <article class="portfolio__item">
             <a href="#" class="portfolio__item__img">
                 <img src="/assets/images/category-iot.jpg" alt="Category IoT">
             </a>
@@ -142,7 +153,7 @@ title: Vanilla Websites
                 <h4>CATEGORY</h4>
                 <p>Project name</p>
             </div>
-        </article>
+        </article> -->
     </div>
 </section>
 

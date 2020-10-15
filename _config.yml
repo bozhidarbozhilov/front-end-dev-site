@@ -1,3 +1,9 @@
+collections_dir: _my-collections  
+collections:
+  - projects
+    
+
+
 exclude:
   - _site
   - Gemfile
