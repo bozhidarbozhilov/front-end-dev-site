@@ -1,0 +1,39 @@
+.icon {
+    &:after {
+        content:"";
+        display:inline-block;
+        color:rgba(0,0,0,0.7);
+        font-family: "Font Awesome 5 Free";
+        font-weight:400;
+        font-size:2.5em;
+    }
+
+    &--gem{
+        &:after {
+            content:"\f3a5";
+        }
+    }
+
+    &--twitter {
+        &:after {
+            font-family:"Font Awesome 5 Brands";
+            font-weight: 900;
+            content:"\f099";
+        }
+
+    }
+
+    &--envelope {
+        &:after{
+            content:"\f0e0";
+        }
+    }
+
+    &--github {
+        &:after{
+            font-family:"Font Awesome 5 Brands";
+            font-weight: 900;
+            content:"\f09b";
+        }
+    }
+}

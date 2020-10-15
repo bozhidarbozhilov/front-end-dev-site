@@ -1,0 +1,29 @@
+.contacts {
+    text-align: center;
+
+    &>.grid-container {
+        padding: 5em 0;
+        width: 60%;
+        grid-template-rows: min-content min-content 1fr;
+    }
+
+    &__options {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        &__item {
+            text-decoration: none;
+            font: inherit;
+            
+            &__icon {
+                &:after {
+                    padding: 0.5em 0;
+
+                }
+            }
+            &__details {
+                color: $primary;
+            }
+
+        }
+    }
+}

@@ -12,3 +12,18 @@
     }
 }
 
+.flex-container {
+    display: flex;
+    &--column {
+        flex-flow: column;
+    }
+    &--centered {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.grid-container {
+    display: grid;
+}
+

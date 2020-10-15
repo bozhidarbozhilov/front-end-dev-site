@@ -1,0 +1,20 @@
+.cta {
+    background-color: $primary;
+    padding: 5em 0;
+    color: white;
+    .flex-container {
+        width: 65%;
+        align-items: center;
+        justify-content: center;
+        text-align:center;
+    }
+    &__heading {
+        text-align: center;
+    }
+    &__content {
+        margin:0;
+    }
+    &__button {
+        margin-top: 2.5em;
+    }
+}

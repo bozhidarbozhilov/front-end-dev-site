@@ -9,12 +9,12 @@ const sass = require("gulp-sass");
 const cp = require("child_process");
 
 gulp.task("sass", function(){
-    return gulp.src("assets/_scss/**/*.scss")
+    return gulp.src("_scss/**/*.scss")
         .pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer())
 		.pipe(size())
         //.pipe(csso())
-        .pipe(gulp.dest('./_site/assets/styles/'))
+        .pipe(gulp.dest('./_site/css/'))
         .pipe(browserSync.stream({match: '**/*.css'}));
 });
 
@@ -31,7 +31,7 @@ gulp.task("watch", function() {
 		}
 	});
 
-	gulp.watch( 'assets/_scss/**/*.scss', gulp.series('sass') );
+	gulp.watch( '_scss/**/*.scss', gulp.series('sass') );
 
 	gulp.watch(
 		[

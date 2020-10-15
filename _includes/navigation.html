@@ -1,6 +1,15 @@
-<nav>
-    {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url==item.link%} class="current"{% endif %}>{{ item.name}}</a>
-    {% endfor %}
-    
+<nav class="site-navbar">
+    <div class="content-container flex-container">
+        <div class="site-navbar__logo">
+            <a href="#" class="site-navbar__link">Vanilla Websites</a>
+             
+        </div>
+        <ul class="site-navbar__list flex-container">
+            <li><a href="#" class="site-navbar__link">About</a></li>
+            <li><a href="#" class="site-navbar__link">Services</a></li>
+            <li><a href="#" class="site-navbar__link">Portfolio</a></li>
+            <li><a href="#" class="site-navbar__link">Contact</a></li>
+        </ul>
+
+    </div>
 </nav>
