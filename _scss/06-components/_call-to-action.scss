@@ -16,5 +16,9 @@
     }
     &__button {
         margin-top: 2.5em;
+        &:hover {
+            animation: shakeElement 0.5s linear 1;
+        }
+    
     }
 }

@@ -9,3 +9,25 @@
         transform: rotate(5deg);
     }
 }
+
+@keyframes revealFromLeft {
+    0%{
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes revealFromRight {
+    0%{
+        transform:translateX(100vw);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity:1;
+    }
+}
