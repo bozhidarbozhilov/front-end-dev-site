@@ -4,26 +4,25 @@
 
 html,
 * {
-    font-family: 'Roboto';
+    font: 12px/1.5 'Roboto', sans-serif;
+    @include for-tablet-landscape-up {
+        font-size:14px;
+    }
+    @include for-desktop-up {
+        font-size:16px;
+    }
 }
 
-a,
-button {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-size: 13px;
-    line-height: 16px;
-}
-
-p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
+body,
+button,
+input,
+select,
+option,
+a {
+    font:inherit;
 }
 
 a {
-    font-weight: 600;
     text-decoration: none;
 }
 
@@ -38,47 +37,30 @@ h4,
 h5,
 h6 {
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
 }
 
 h1 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 2.8em;
 }
 
 h2 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 2.2em;
 }
 
 h3 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.8em;
 }
 
 h4 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.4em;
 }
 
 h5 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.2em;
 }
 
 h6 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1em;
 }
 
