@@ -8,8 +8,7 @@
     }
 
     &__options {
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: space-evenly;
+        
         &__item {
             text-decoration: none;
             font: inherit;
@@ -24,6 +23,15 @@
                 color: $primary;
             }
 
+        }
+
+        
+    }
+
+    @include for-desktop-up {
+        &__options {
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: space-evenly;
         }
     }
 }

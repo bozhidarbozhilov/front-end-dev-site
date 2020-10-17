@@ -1,7 +1,5 @@
 .portfolio {
-    .grid-container {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+
     &__item {
         position: relative;
         &__img {
@@ -26,6 +24,12 @@
             opacity: 0.8;
             color: #fff;
             cursor: pointer
+        }
+    }
+
+    @include for-desktop-up {
+        .grid-container {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 }
