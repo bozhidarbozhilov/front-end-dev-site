@@ -3,7 +3,7 @@ layout: default
 title: Vanilla Websites
 ---
 
-<div class="site-header ">
+<div class="site-header" id="about">
     <div class="content-container flex-container flex-container--column">
         <div class="site-header__heading short-line short-line--primary">
             <h1>Websites without third party libraries</h1> 
@@ -13,12 +13,12 @@ title: Vanilla Websites
 
         </div>
         <div class="site-header__cta">
-            <a href="#" class="btn btn--large btn--primary">find out more</a>
+            <a href="https://google.com" class="btn btn--large btn--primary">find out more</a>
         </div>
         
     </div>
 </div>
-<section class="cta">
+<section class="cta" id="cta">
     <div class="content-container flex-container flex-container--column">
         <div class="cta__heading short-line short-line--white">
             <h2>We've got what you need!</h2>
@@ -33,7 +33,7 @@ title: Vanilla Websites
         </div>
     </div>
 </section>
-<section class="services">
+<section class="services" id="services">
     <div class="content-container ">
         <div class="services__heading short-line short-line--primary">
             <h2>At Your Service</h2>
@@ -87,7 +87,7 @@ title: Vanilla Websites
 
     </div>
 </section>
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
     <div class="grid-container">
         {% for project in site.projects %}
         <article class="portfolio__item">
@@ -157,7 +157,7 @@ title: Vanilla Websites
     </div>
 </section>
 
-<section class="contacts">
+<section class="contacts" id="contacts">
     <div class="content-container grid-container">
         <div class="contacts__heading">
             <h3>Let's Get In Touch</h3>
